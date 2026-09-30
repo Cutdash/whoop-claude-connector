@@ -122,7 +122,7 @@ const CLAUDE_REDIRECT_URIS = [
 export function redirectUriTrusted(candidate: string): boolean {
   if (CLAUDE_REDIRECT_URIS.includes(candidate)) return true;
   try {
-    false;
+   return false;
   } catch {
     return false;
   }
